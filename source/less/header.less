@@ -1,0 +1,76 @@
+.header {
+	height: 600px;
+	border-top: 10px solid @but-bg;
+	background: url("../img/bg.jpg") no-repeat center top;
+	background-size: cover;
+	&__logo-wrap {
+		width: 920px;
+		height: 440px;
+		background: url("../img/hand.png") no-repeat;
+		background-position: bottom right;
+		margin: 0 auto;
+		padding: 160px 75px 0;
+	}
+	&__text {
+		font-family: "Lato", sans-serif;
+		font-weight: 400;
+		font-size: 2.4rem;
+		line-height: 3.6rem;
+		color: #fff;
+		margin-bottom: 25px;
+		width: 470px;
+	}
+}
+.logo {
+	font-family: "Pacifico", sans-serif;
+	font-size: 6rem;
+	line-height: 2rem;
+	color: #fff;
+	margin-bottom: 75px;
+	& span {
+		color: @but-bg;
+	}
+}
+.os {
+	&__item {
+		display: inline-block;
+		font-size: 0;
+		height: 50px;
+		width: 50px;
+		border-radius: 50%;
+		background: rgba(3, 3, 3, .4);
+		margin-right: 18px;
+		position: relative;
+		overflow: hidden;
+		&:before {
+			background: @but-bg;
+			content: "";
+			display: block;
+			height: 0;
+			width: 0;
+			border-radius: 50%;
+			position: absolute;
+			top: 25px;
+			left: 25px;
+			transition: all .15s linear;
+			z-index: 2;
+		}
+		&:hover:before {
+			left: 0;
+			top: 0;
+			width: 50px;
+			height: 50px;
+		}
+		& a {
+			display: block;
+			text-align: center;
+			padding-top: 10px;
+		}
+		& i {
+			font-size: 2.6rem;
+			color: rgba(244, 244, 244, .7);
+			position: relative;
+			z-index: 3;
+		}
+	}
+}

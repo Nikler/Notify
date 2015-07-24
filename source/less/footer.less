@@ -1,0 +1,21 @@
+.footer {
+	background: @even-bg;
+	padding: 55px 0;
+	text-align: center;
+}
+.nav {
+	&-item {
+		display: inline-block;
+		vertical-align: top;
+		font-size: 0px;
+		margin: 0 20px;
+		& a {
+			font-size: 1.6rem;
+			color: @p-color;
+			transition: all 0.2s linear;
+			&:hover {
+				color: @h-color;
+			}
+		}
+	}
+}

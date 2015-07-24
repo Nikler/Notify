@@ -1,0 +1,77 @@
+.promo {
+	background: @even-bg;
+	padding: 60px 0;
+	&__form {
+		float:left;
+		width: 590px;
+		padding: 0 10px;
+	}
+	&__title {
+		font-size: 2.2rem;
+		line-height: 1.8rem;
+		color: @h-color;
+		font-family: "Raleway", sans-serif;
+		font-weight: 600;
+		margin: 0 0 25px;
+	}
+	&__text {
+		font-size: 1.6rem;
+		line-height: 2.6rem;
+		color: @p-color;
+		padding-right: 45px;
+		margin-bottom: 20px;
+	}
+	&__video {
+		float: right;
+		padding: 0 10px;
+		& img {
+			border-radius: 10px;
+		}
+	}
+}
+.email {
+	width: 445px;
+	border-radius: 15px;
+	height: 55px;
+	border: 1px solid #c8c8c8;
+	font-size: 1.6rem;
+	color: @p-color;
+	padding: 17px 165px 17px 25px;
+	box-sizing: border-box;
+	font-family: "Lato", sans-serif;
+	&::-webkit-input-placeholder {
+		color: @p-color;
+		font-size: 1.7rem;
+	}
+	&::-moz-placeholder {
+		color:#c0392b;
+		font-size: 1.7rem;
+	}
+	&:-moz-placeholder {
+		color:#c0392b;
+		font-size: 1.7rem;
+	}
+	&:-ms-input-placeholder {
+		color:#c0392b;
+		font-size: 1.7rem;
+	}
+}
+.submit {
+	width: 140px;
+	height: 55px;
+	background: @but-bg;
+	font-size: 2.2rem;
+	font-family: "Raleway", sans-serif;
+	font-weight: 700;
+	color: #fff;
+	border: none;
+	border-top-right-radius: 15px;
+	border-bottom-right-radius: 15px;
+	margin-left: -140px;
+	vertical-align: top;
+	cursor: pointer;
+	transition: all .15s linear;
+	&:hover {
+		background: darken(@but-bg, 10%);
+	}
+}

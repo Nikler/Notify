@@ -1,0 +1,168 @@
+.comments {
+	padding: 50px 0;
+	text-align: center;
+	&__quote {
+		width: 800px;
+		display: inline-block;
+		font-family: "Lato", sans-serif;
+		font-style: italic;
+		color: @p-color;
+		font-size: 1.8rem;
+		line-height: 3rem;
+	}
+	&__name {
+		font-family: "Raleway", sans-serif;
+		font-weight: 700;
+		font-size: 1.8rem;
+		line-height: 2rem;
+		margin: 20px 0 30px;
+		color: #2e2e2e;
+	}
+	&-user {
+		width: 50px;
+		height: 50px;
+		display: inline-block;
+		vertical-align: top;
+		font-size: 0px;
+		margin-right: 4px;
+		position: relative;
+		cursor: pointer;
+		overflow: hidden;
+		&:before {
+			content: "";
+			display: block;
+			position: absolute;
+			top: -50px;
+			left: 0;
+			width: 50px;
+			height: 50px;
+			background-color: rgba(46, 204, 113, .6);
+			transition: all .15s linear;
+		}
+		&:hover:before {
+			top: 0;
+		}
+		&:last-child {
+			margin-right: 0px;
+		}
+		&--1 {
+			background: url("../img/sprite-face.png") no-repeat 0 0;
+		}
+		&--2 {
+			background: url("../img/sprite-face.png") no-repeat -55px 0;
+		}
+		&--3 {
+			background: url("../img/sprite-face.png") no-repeat -110px 0;
+		}
+		&--4 {
+			background: url("../img/sprite-face.png") no-repeat -165px 0;
+		}
+		&--5 {
+			background: url("../img/sprite-face.png") no-repeat -220px 0;
+		}
+		&--6 {
+			background: url("../img/sprite-face.png") no-repeat -275px 0;
+		}
+		&--7 {
+			background: url("../img/sprite-face.png") no-repeat -330px 0;
+		}
+		&--8 {
+			background: url("../img/sprite-face.png") no-repeat -385px 0;
+		}
+		&--9 {
+			background: url("../img/sprite-face.png") no-repeat -440px 0;
+		}
+		&--10 {
+			background: url("../img/sprite-face.png") no-repeat -495px 0;
+		}
+		&--11 {
+			background: url("../img/sprite-face.png") no-repeat -550px 0;
+		}
+		&--12 {
+			background: url("../img/sprite-face.png") no-repeat -605px 0;
+		}
+		&--13 {
+			background: url("../img/sprite-face.png") no-repeat -660px 0;
+		}
+		&--14 {
+			background: url("../img/sprite-face.png") no-repeat -715px 0;
+		}
+		&--15 {
+			background: url("../img/sprite-face.png") no-repeat -770px 0;
+		}
+		&--16 {
+			background: url("../img/sprite-face.png") no-repeat -825px 0;
+		}
+		&--17 {
+			background: url("../img/sprite-face.png") no-repeat -880px 0;
+		}
+		&--18 {
+			background: url("../img/sprite-face.png") no-repeat -935px 0;
+		}
+		&--19 {
+			background: url("../img/sprite-face.png") no-repeat -990px 0;
+		}
+		&--20 {
+			background: url("../img/sprite-face.png") no-repeat -1045px 0;
+		}
+		&--21 {
+			background: url("../img/sprite-face.png") no-repeat -1100px 0;
+		}
+	}
+	&__title {
+		margin: 50px 0 15px;
+		font-size: 2.4rem;
+		line-height: 2.4rem;
+		font-family: "Raleway", sans-serif;
+		font-weight: 600;
+		color: #000;
+	}
+	&__desc {
+		font-size: 1.6rem;
+		line-height: 2.6rem;
+		color: @p-color;
+		margin-bottom: 25px;
+	}
+}
+.social {
+	& a {
+		display: inline-block;
+		font-size: 0;
+		vertical-align: top;
+		text-align: center;
+		width: 34px;
+		height: 34px;
+		border-radius: 50%;
+		background: #d4d4d4;
+		margin: 0 5px;
+		padding-top: 6px;
+		box-sizing: border-box;
+		position: relative;
+		overflow: hidden;
+		&:before {
+			background: @but-bg;
+			content: "";
+			display: block;
+			height: 0;
+			width: 0;
+			border-radius: 50%;
+			position: absolute;
+			top: 17px;
+			left: 17px;
+			transition: all .15s linear;
+			z-index: 2;
+		}
+		&:hover:before {
+			left: 0;
+			top: 0;
+			width: 34px;
+			height: 34px;
+		}		
+		& i {
+			font-size: 2rem;
+			color: #fff;
+			position: relative;
+			z-index: 3;
+		}
+	}
+}
